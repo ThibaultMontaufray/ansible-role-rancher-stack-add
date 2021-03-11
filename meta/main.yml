@@ -1,0 +1,19 @@
+galaxy_info:
+  author: Thibault MONTAUFRAY
+  description: Install or upgrade rancher stacks in an existing rancher environment
+  company: servOdroid
+
+  license: MIT
+
+  min_ansible_version: 2.2
+
+  platforms:
+    - name: Debian
+      versions:
+        - all
+
+  galaxy_tags:
+    - rancher
+
+  dependencies:
+    - rancher-cli

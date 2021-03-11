@@ -1,0 +1,14 @@
+version: '2'
+services:
+  site:
+    scale: 1
+    start_on_create: true
+  backoffice:
+   scale: 1
+   start_on_create: true
+  api:
+    scale: 1
+    start_on_create: true
+  neo4j:
+    scale: 1
+    start_on_create: true

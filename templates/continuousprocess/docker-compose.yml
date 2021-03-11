@@ -1,0 +1,12 @@
+version: '2'
+services:
+  jenkins:
+    image: cntproc.jenkins
+    volumes:
+    - /var/run/docker.sock:/var/run/docker.sock
+    - /var/jenkins_home/hostexchange/:/root/
+    ports:
+    - 8081:8081/tcp
+    labels:
+      io.rancher.scheduler.affinity:host_label: ci=true
+      io.rancher.scheduler.global: 'true'

@@ -1,0 +1,8 @@
+version: '2'
+services:
+  nginx:
+    image: infra/nginx
+    labels:
+      io.rancher.scheduler.affinity:host_label: vip=true
+      io.rancher.scheduler.global: 'true'
+

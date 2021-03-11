@@ -1,0 +1,12 @@
+version: '2'
+services:
+  jenkins:
+    image: servo.artifactory
+    volumes:
+    - /var/run/docker.sock:/var/run/docker.sock
+    - /var/jenkins_home/hostexchange/:/root/
+    ports:
+    - 8083:80/tcp
+    labels:
+      io.rancher.scheduler.affinity:host_label: cd=true
+      io.rancher.scheduler.global: 'true'
