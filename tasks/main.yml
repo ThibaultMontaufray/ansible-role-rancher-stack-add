@@ -31,3 +31,4 @@
     chdir: "stacks/{{ stack_name }}"
   register: stack_confirm_upgrade
   become: yes
+...
