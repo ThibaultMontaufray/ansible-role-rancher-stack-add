@@ -1,3 +1,4 @@
 ---
 rancher_cli_stack_opts: "--pull --upgrade"
 rancher_master_url: "http://localhost:8080"
+...
